@@ -1,5 +1,8 @@
 package Algorithms.Sort;
 import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
+
 import org.junit.Before;    
     
 public class QuickSortTest {
@@ -14,8 +17,10 @@ public class QuickSortTest {
     }
         
     @Test
-    public void test() {
-        
+    public void quickSortTest() {
+        qs.quickSort(array);
+
+        assertArrayEquals(expected, array);
     }
 }
     
