@@ -1,5 +1,8 @@
 package Algorithms.Sort;
 import org.junit.Test;
+
+import static org.junit.Assert.assertArrayEquals;
+
 import org.junit.Before;    
     
 public class MergeSortTest {
@@ -14,8 +17,10 @@ public class MergeSortTest {
     }
         
     @Test
-    public void test() {
-        
+    public void mergeSortTest() {
+        ms.mergeSort(array);
+
+        assertArrayEquals(expected, array);
     }
 }
     
